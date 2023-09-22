@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Select both audio elements
+
     const audioPlayers = document.querySelectorAll('.audio-player');
     
-    // Loop through each audio element
+
     audioPlayers.forEach(function(audioPlayer, index) {
         const playPauseButtons = document.querySelectorAll('.play-pause');
         const seekBars = document.querySelectorAll('.seek-bar');
         const currentTimeElements = document.querySelectorAll('.current-time');
         const durationElements = document.querySelectorAll('.duration');
 
-        // Add event listeners for each audio element
+
         playPauseButtons[index].addEventListener('click', function() {
             if (audioPlayer.paused || audioPlayer.ended) {
                 audioPlayer.play();

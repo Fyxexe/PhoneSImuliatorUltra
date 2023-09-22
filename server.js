@@ -39,6 +39,10 @@ app.get("/audio", function (req, res) {
     var filePath = path.join(__dirname, "src/pages/audio/audio.html");
     res.sendFile(filePath);
 });
+app.get("/snake", function (req, res) {
+    var filePath = path.join(__dirname, "src/pages/gameSnake/snake.html");
+    res.sendFile(filePath);
+});
 
 
 

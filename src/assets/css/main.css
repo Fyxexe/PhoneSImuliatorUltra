@@ -673,3 +673,18 @@ input[type=range] {
 .player{
     margin: 30px;
 }
+
+#canvas {
+    display: grid;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black
+}
+
+.current {
+ background-color: red;
+}
+
+.food {
+    background-color: green;
+}
