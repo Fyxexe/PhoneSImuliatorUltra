@@ -23,7 +23,7 @@ setInterval(displayTime, 1000);
 
 function processPin() {
     var enteredPin = document.getElementById('pin').value;
-    var correctPin = '1234';
+    var correctPin = '2587';
 
     if (enteredPin === correctPin) {
     

@@ -11,12 +11,15 @@
         <div class="camera">
 
         </div>
-  <div class="container-time">
-    <h1 id="displayTime">00:00:00</h1><br>
-    <div class="button--manger">
-        <img src="/public/icons/timer/pause.png" alt="Pous" class="btn-m" onclick="watchStop()">
-        <img src="/public/icons/timer/start.png" alt="Start" class="btn-m" onclick="watchStart()">
-        <img src="/public/icons/timer/reset.png" alt="restar" class="btn-m" onclick="wathcReset()">
+  <div class="container-dictaphone">
+
+    <div class="audio-player">
+        <a id="downloadLink" style="display: none">Download Recording</a>
+        <div class="audio-controls">
+            <button id="startRecord"><img src="/public/icons/mic.png" alt=""></a></button>
+            <button id="stopRecord" disabled><img src="/public/icons/timer/pause.png" alt=""></button>
+        </div>
+        <audio class="audio-element" id="audioPlayer" controls></audio>
     </div>
   </div>
 
@@ -35,7 +38,7 @@
     </main>
 
 
-    <script src="/src/pages/timer/time.js"></script>
+    <script src="/src/pages/Dictaphone/dictaphone.js"></script>
 
 </body>
 </html>

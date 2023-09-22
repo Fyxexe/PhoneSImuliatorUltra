@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/assets/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="main">
+        <div class="camera">
+
+        </div>
+        <div class="container-audio">
+            <div class="player-conatiner">
+
+            
+            <div class="player">
+               <img src="/public/pictures/audi1.jpeg" alt="">
+                <audio class="audio-player"  >
+                    <source src="/public/audio/audo.mp3" type="audio/mp3" >
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="controls">
+                    <button class="play-pause">Play</button>
+                    <input type="range" class="seek-bar" value="0">
+                    <span>    <span class="current-time">0:00</span> / <span class="duration">0:00</span></span>
+                
+                </div>
+            </div>
+            <div class="player">
+               <img src="/public/pictures/audi1.jpeg" alt="">
+                <audio class="audio-player"  >
+                    <source src="/public/audio/audo2.mp3" type="audio/mp3" >
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="controls">
+                    <button class="play-pause">Play</button>
+                    <input type="range" class="seek-bar" value="0">
+                    <span>    <span class="current-time">0:00</span> / <span class="duration">0:00</span></span>
+                
+                </div>
+            </div>
+        </div>
+        </div>
+        <button class="menu-button">
+            <a href="/global">◉</a>
+        </button>
+    </main>
+    <script src="/src/pages/audio/audio.js"></script>
+</body>
+</html>

@@ -27,8 +27,16 @@ app.get("/game", function (req, res) {
     var filePath = path.join(__dirname, "src/pages/game/game.html");
     res.sendFile(filePath);
 });
-app.get("/timer", function (req, res) {
+app.get("/time", function (req, res) {
     var filePath = path.join(__dirname, "src/pages/timer/timer.html");
+    res.sendFile(filePath);
+});
+app.get("/dictaphone", function (req, res) {
+    var filePath = path.join(__dirname, "src/pages/dictaphone/dictaphone.html");
+    res.sendFile(filePath);
+});
+app.get("/audio", function (req, res) {
+    var filePath = path.join(__dirname, "src/pages/audio/audio.html");
     res.sendFile(filePath);
 });
 
