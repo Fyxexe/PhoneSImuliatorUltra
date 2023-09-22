@@ -1,4 +1,4 @@
-// Global variables
+
 let audioStream;
 let mediaRecorder;
 let audioChunks = [];

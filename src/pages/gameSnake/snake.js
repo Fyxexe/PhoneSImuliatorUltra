@@ -64,14 +64,14 @@ function checkCollision() {
 
 function drawSnake() {
     const headRadius = gridSize / 2;
-    const bodyRadius = gridSize / 3; // Adjust the body size as needed
+    const bodyRadius = gridSize / 3;
     snake.forEach((segment, index) => {
         const isHead = index === 0;
 
         ctx.fillStyle = isHead ? "green" : "darkgreen";
         ctx.strokeStyle = "black";
 
-        // Calculate coordinates for the center of each segment
+      
         const centerX = segment.x * gridSize + headRadius;
         const centerY = segment.y * gridSize + headRadius;
 
