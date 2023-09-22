@@ -1,0 +1,409 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,700;1,600&family=Roboto:ital,wght@0,900;1,700&display=swap');
+/* font-family: 'IBM Plex Mono', monospace;
+font-family: 'Roboto', sans-serif; */
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c2966c;
+}
+.main{
+    background-color: #333; 
+    width: 360px;
+    height: 740px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    padding: 10px;
+}
+
+.container{
+    background-color: #fff;
+    width: 320px;
+    height: 700px;
+    background-image: url(../../../public/pictures/backgrund.jpeg);
+    border-radius: 27px;
+    display: flex;
+    flex-direction:  column;
+    row-gap: 100px;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+.camera{
+    background-color: #474545;
+    width: 90px;
+    height: 10px;
+    border-radius: 30px;
+
+}
+
+.camera::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+
+    width: 10px;
+    height: 10px;
+    background-color: #fda300;
+    border-radius: 50%;
+}
+
+.menu-button {
+    background-color: #474545;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.menu-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.menu-button:active {
+    transform: scale(0.9);
+    box-shadow: none;
+    background-color: #333333; 
+}
+
+
+.menu_widget{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 30px;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: #fcfcff;
+    width: 320px;
+    height: 100px;
+}
+
+.clock .time{
+    font-size: 48px;
+}
+
+.weather{
+    background-color: #0d0d0d87;
+    font-size: 20px;
+    color: rgb(255, 218, 218);
+
+    display: flex;
+}
+
+#pin {
+    width: 100px;
+    font-size: 24px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    text-align: center;
+    background-color: transparent;
+    outline: none;
+}
+
+#pin-submit {
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 80px;
+}
+
+/* Style for the PIN buttons */
+.pin-btn-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pin-btn {
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+    margin: 5px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent background */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3); /* Glass texture */
+}
+
+.pin-btn:hover {
+    background-color: rgba(255, 255, 255, 0.7); /* Lighten on hover */
+}
+
+/* Style for the orange-colored buttons */
+.pin-btn.orange {
+    background-color: orange;
+    color: white;
+}
+
+.pin-btn.orange:hover {
+    background-color: darkorange;
+}
+
+
+
+body, .search-bar {
+	display: flex;
+}
+
+.search-bar input,
+.search-btn, 
+.search-btn:before, 
+.search-btn:after {
+	transition: all 0.25s ease-out;
+}
+.search-bar input,
+.search-btn {
+	width: 3em;
+	height: 3em;
+}
+.search-bar input:invalid:not(:focus),
+.search-btn {
+	cursor: pointer;
+}
+.search-bar,
+.search-bar input:focus,
+.search-bar input:valid  {
+	width: 100%;
+}
+.search-bar input:focus,
+.search-bar input:not(:focus) + .search-btn:focus {
+	outline: transparent;
+}
+.search-bar {
+	margin: auto;
+	padding: 1.5em;
+	justify-content: center;
+	max-width: 30em;
+}
+.search-bar input {
+	background: transparent;
+	border-radius: 1.5em;
+	box-shadow: 0 0 0 0.4em #171717 inset;
+	padding: 0.75em;
+	transform: translate(0.5em,0.5em) scale(0.5);
+	transform-origin: 100% 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.search-bar input::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+.search-bar input:focus,
+.search-bar input:valid {
+	background: #fff;
+	border-radius: 0.375em 0 0 0.375em;
+	box-shadow: 0 0 0 0.1em #d9d9d9 inset;
+	transform: scale(1);
+}
+.search-btn {
+	background: #171717;
+	border-radius: 0 0.75em 0.75em 0 / 0 1.5em 1.5em 0;
+	padding: 0.75em;
+	position: relative;
+	transform: translate(0.25em,0.25em) rotate(45deg) scale(0.25,0.125);
+	transform-origin: 0 50%;
+}
+.search-btn:before, 
+.search-btn:after {
+	content: "";
+	display: block;
+	opacity: 0;
+	position: absolute;
+}
+.search-btn:before {
+	border-radius: 50%;
+	box-shadow: 0 0 0 0.2em #f1f1f1 inset;
+	top: 0.75em;
+	left: 0.75em;
+	width: 1.2em;
+	height: 1.2em;
+}
+.search-btn:after {
+	background: #f1f1f1;
+	border-radius: 0 0.25em 0.25em 0;
+	top: 51%;
+	left: 51%;
+	width: 0.75em;
+	height: 0.25em;
+	transform: translate(0.2em,0) rotate(45deg);
+	transform-origin: 0 50%;
+}
+.search-btn span {
+	display: inline-block;
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
+}
+
+
+.search-bar input:focus + .search-btn,
+.search-bar input:valid + .search-btn {
+	background: #2762f3;
+	border-radius: 0 0.375em 0.375em 0;
+	transform: scale(1);
+}
+.search-bar input:focus + .search-btn:before, 
+.search-bar input:focus + .search-btn:after,
+.search-bar input:valid + .search-btn:before, 
+.search-bar input:valid + .search-btn:after {
+	opacity: 1;
+}
+.search-bar input:focus + .search-btn:hover,
+.search-bar input:valid + .search-btn:hover,
+.search-bar input:valid:not(:focus) + .search-btn:focus {
+	background: #0c48db;
+}
+.search-bar input:focus + .search-btn:active,
+.search-bar input:valid + .search-btn:active {
+	transform: translateY(1px);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	body, input {
+		color: #f1f1f1;
+	}
+	body {
+		background: #171717;
+	}
+	.search-bar input {
+		box-shadow: 0 0 0 0.4em #f1f1f1 inset;
+	}
+	.search-bar input:focus,
+	.search-bar input:valid {
+		background: #3d3d3d;
+		box-shadow: 0 0 0 0.1em #3d3d3d inset;
+	}
+	.search-btn {
+		background: #f1f1f1;
+	}
+}
+
+.app-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+}
+.app-row{
+    display: flex;
+    column-gap: 30px;
+}
+.app{
+  padding: 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+}
+.app img{
+    width: 60px;
+}
+.app:hover{
+    background-color: rgba(255, 255, 255, 0.658);
+}
+#calc{
+    width: 260px;
+    height: 100px;
+    margin-top: 50px;
+    font-size: 40px;
+    text-align: end;
+  background-color:rgb(51, 51, 51);
+  padding-right: 5px;
+  
+  
+  }
+  .calc-btn{
+    width: 65px;
+    height: 65px;
+    margin-top: 5px;
+    margin-left: 2.5px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: black;
+  }
+  .listone,.listtwo,.listthree,.listfour,.listenzero{
+    display: flex;
+  }
+  
+  .clear-btns{
+    background-color:rgb(0, 187, 255);
+    width: 130px;
+    height: 50px;
+  }
+
+
+  
+  #area {
+    margin-top: 30px;
+      width: 152px;
+      border: 1px solid #000;
+
+      font-size: 0;
+      margin-bottom: 30px;
+     
+  }
+  
+  .cell {
+    background-color: rgba(32, 33, 34, 0.573);
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      display: inline-block;
+      font-size: 26px;
+      border: 1px solid #000;
+      cursor: pointer;
+      vertical-align: middle;
+      transition: background .1s;
+  }
+  
+  .cell:hover {
+      background-color: #F1F1F1;
+  }
+  
+  .currentPlayer {
+      width: 140px;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      margin-left: 30px;
+  }
+  
+  .stat {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      margin-left: 5px;
+  }
+  
+  .stat table {
+      border-collapse: collapse;
+  }
+  
+  .stat table, .stat th, .stat td {
+      border: 1px solid #000;
+      padding: 5px;
+      text-align: center;
+  }
+  
+  

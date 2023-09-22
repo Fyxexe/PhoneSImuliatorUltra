@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/assets/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="main">
+        <div class="camera">
+
+        </div>
+        <div class="container">
+      
+            <form name = "form1">
+                    
+               
+                <input id = "calc" type ="text" name = "answer" readonly> 
+                <div class="listenzero">
+                  <input type = "button" value = "AC" onclick = "form1.answer.value = ' ' " id= "clear" class="calc-btn clear-btns" >
+                  <input type = "button" value = "C" onclick = "form1.answer.value =  form1.answer.value.toString().slice(0,-1)" id= "clear" class="calc-btn clear-btns" >
+                </div>
+<div class="listone">
+                <input type = "button" value = "1" onclick = "form1.answer.value += '1' " class="calc-btn">
+                <input type = "button" value = "2" onclick = "form1.answer.value += '2' " class="calc-btn">
+                <input type = "button" value = "3" onclick = "form1.answer.value += '3' " class="calc-btn">
+                 <input type = "button" value = "+" onclick = "form1.answer.value += '+' " class="calc-btn" class="calc-btn" style="background-color: orange;">
+  </div>
+                <div class="listtwo">
+                <input type = "button" value = "4" onclick = "form1.answer.value += '4' " class="calc-btn">
+                <input type = "button" value = "5" onclick = "form1.answer.value += '5' " class="calc-btn">
+                <input type = "button" value = "6" onclick = "form1.answer.value += '6' " class="calc-btn">
+                <input type = "button" value = "-" onclick = "form1.answer.value += '-' " class="calc-btn" class="calc-btn" style="background-color: orange;">
+            </div>
+                <div class="listthree">
+                <input type = "button" value = "7" onclick = "form1.answer.value += '7' " class="calc-btn">
+                <input type = "button" value = "8" onclick = "form1.answer.value += '8' " class="calc-btn">
+                <input type = "button" value = "9" onclick = "form1.answer.value += '9' " class="calc-btn">
+                <input type = "button" value = "*" onclick = "form1.answer.value += '*' " class="calc-btn" style="background-color: orange;">
+                </div>
+                
+                <div class="listfour">
+                <input type = "button" value = "/" onclick = "form1.answer.value += '/' " class="calc-btn">
+                <input type = "button" value = "0" onclick = "form1.answer.value += '0' " class="calc-btn">
+                  <input type = "button" value = "." onclick = "form1.answer.value += '.' " class="calc-btn">
+              
+                <input type = "button" value = "=" onclick = "form1.answer.value = eval(form1.answer.value) " class="calc-btn" class="calc-btn" style="background-color: orange;">
+                </div>
+              
+
+                
+              </form>
+        </div>
+
+      
+        
+        </div>
+        <button class="menu-button">
+  <a href="/global">◉</a>
+        </button>
+    </main>
+
+
+    <script src="/src/pages/calculator/calculator.js"></script>
+
+</body>
+</html>

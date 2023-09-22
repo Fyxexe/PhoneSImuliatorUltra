@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="main">
+        <div class="camera">
+
+        </div>
+        <div class="container">
+           <div class="menu_widget">
+            <div class="clock">
+                <div class="time">
+                <span id="hours"></span>
+                <span>:</span>
+                <span id="minut"></span>
+                </div>
+                <div class="data">
+                <span id="monthly"></span>
+                <span id="day"></span>
+                <span id="year"></span>
+            </div>
+            </div>
+        
+            
+           </div>
+
+           
+           <div class="pin-code">
+            <input type="password" id="pin" name="pin" maxlength="4" placeholder="****">
+            <button id="pin-submit">Submit</button>
+        
+            <div class="pin-btn-row">
+                <input type="button" value="1" onclick="appendDigit('1')" class="pin-btn">
+                <input type="button" value="2" onclick="appendDigit('2')" class="pin-btn">
+                <input type="button" value="3" onclick="appendDigit('3')" class="pin-btn" >
+            </div>
+        
+            <div class="pin-btn-row">
+                <input type="button" value="4" onclick="appendDigit('4')" class="pin-btn">
+                <input type="button" value="5" onclick="appendDigit('5')" class="pin-btn">
+                <input type="button" value="6" onclick="appendDigit('6')" class="pin-btn" >
+            </div>
+        
+            <div class="pin-btn-row">
+                <input type="button" value="7" onclick="appendDigit('7')" class="pin-btn">
+                <input type="button" value="8" onclick="appendDigit('8')" class="pin-btn">
+                <input type="button" value="9" onclick="appendDigit('9')" class="pin-btn" >
+            </div>
+        </div>
+        
+        </div>
+        <div class="menu-button">
+
+        </div>
+    </main>
+
+    <script src="./assets/scripts/index.js"></script>
+</body>
+</html>
